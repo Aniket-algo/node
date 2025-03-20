@@ -174,3 +174,14 @@ app.get("/accpt",(req,res)=>{
     }
 
   })
+
+
+  //! headers it is used to get all information about of headers.
+
+  app.get("/head",(req,res)=>{
+    res.send(req.headers);
+  })
+
+  app.get("/head1",(req,res)=>{
+    res.send(req.headers.host);
+  })
